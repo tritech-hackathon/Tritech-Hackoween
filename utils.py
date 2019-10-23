@@ -24,7 +24,7 @@ def establish_connection(device=DEVICE, baudrate=BAUDRATE, timeout=TIMEOUT):
     return s
 
 def publish(s):
-    url = 'http://ec2-18-195-248-134.eu-central-1.compute.amazonaws.com/publish'
+    url = 'http://halloweenhackathontritech-env.ztn2gdnher.eu-north-1.elasticbeanstalk.com/publish'
     requests.post(url, data=s)
 
 def readln(serial_device):
